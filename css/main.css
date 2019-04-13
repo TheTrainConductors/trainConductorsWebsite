@@ -9,62 +9,124 @@ body {
 	color: #FFD700;
 }
 
-/* The sidebar menu */
-.sidenav {
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 160px; /* Set the width of the sidebar */
-	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
-	left: 0;
-	background-color: #494f59; /* Black */
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 20px;
-	text-align: center;
-}
-	
-	/* The navigation menu links */
-.sidenav a {
-	text-decoration: none;
-	font-size: 145%;
-	color: #FFD700;
-	display: block;
-	padding: 15% 0% 15% 0%;
-	top: 50%;
+
+
+@media screen and (min-width: 800px) {
+	.teamName {
+		display: none;
+	}
+	/* The sidebar menu */
+	.sidenav {
+		height: 100%; /* Full-height: remove this if you want "auto" height */
+		width: 160px; /* Set the width of the sidebar */
+		position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+		z-index: 1; /* Stay on top */
+		top: 0; /* Stay at the top */
+		left: 0;
+		background-color: #494f59; /* Black */
+		overflow-x: hidden; /* Disable horizontal scroll */
+		padding-top: 20px;
+		text-align: center;
+	}
+		
+		/* The navigation menu links */
+	.sidenav a {
+		text-decoration: none;
+		font-size: 145%;
+		color: #FFD700;
+		display: block;
+		padding: 15% 0% 15% 0%;
+		top: 50%;
+	}
+
+	.sidenav img {
+		width: 30%;
+		padding-left: 5%;
+	}
+
+		/* When you mouse over the navigation links, change their color */
+	.sidenav a:hover {
+		color: #2a2c30;
+		background-color: #FFD700;
+	}
+		
+		/* Style page content */
+	.main {
+		margin-left: 160px; /* Same as the width of the sidebar */
+	}
+
+	.trainText {
+		color: #FFD700;
+		text-align: center;
+		padding: 5%;
+		border-bottom: #FFD700 solid 2px;
+		background-image: url(../photos/trainImg.png);
+		margin-bottom: 2%;
+	}
+
+	.textOverlay {
+		padding: 1%;
+		border-radius: 50px;
+		box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.5);
+		width: 60%;
+		margin: auto;
+	}
 }
 
-.sidenav img {
-	width: 30%;
-	padding-left: 5%;
-}
+@media screen and (max-width: 800px) {
+	main {
+		width: 100%;
+		height: 500px;
+	}
 
-	/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-	color: #2a2c30;
-	background-color: #FFD700;
-}
-	
-	/* Style page content */
-.main {
-	margin-left: 160px; /* Same as the width of the sidebar */
-}
+	.sidenav {
+		height: 80px; /* Full-height: remove this if you want "auto" height */
+		width: 100%; /* Set the width of the sidebar */
+		position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+		z-index: 1; /* Stay on top */
+		top: 0; /* Stay at the top */
+		left: 0;
+		background-color: #494f59; /* Black */
+		overflow-x: hidden; /* Disable horizontal scroll */
+		text-align: center;
+	}
 
-.trainText {
-	color: #FFD700;
-	text-align: center;
-	padding: 5%;
-	border-bottom: #FFD700 solid 2px;
-	background-image: url(../photos/trainImg.png);
-	margin-bottom: 2%;
-}
+	.sidenav a {
+		text-decoration: none;
+		font-size: 145%;
+		color: #FFD700;
+		display: inline-block;
+		padding: 0% 0% 0% 0%;
+		margin: 0% 5% 0% 0%;
+	}
 
-.textOverlay {
-	padding: 1%;
-	border-radius: 50px;
-	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.5);
-	background: rgba(0,0,0,0.5);
-	width: 60%;
-	margin: auto;
+	.sidenav img {
+		display: none;
+	}
+
+	.teamName {
+		z-index: 1;
+	}
+
+	.trainText {
+		background-image: url(../photos/trainImg.png);
+
+		text-align: center;
+		margin-top: 35px;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		border-bottom: #FFD700 2px solid;
+	}
+
+	.textOverlay {
+		padding: 1%;
+		border-radius: 50px;
+		box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.5);
+		width: 60%;
+		margin: auto;
+	}
 }
 	
 	/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
